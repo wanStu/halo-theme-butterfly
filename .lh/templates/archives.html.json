@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1679846775088,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679847042591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n               >\n                 <img class=\"w-100 h-100\"\n                      th:src=\"${theme.config.loading.preload}\"\n                      th:attr=\"onerror='this.src='+${'`'+theme.config.loading.err+'`'}\"\n-                     th:data-lazy-src=\"${#strings.isEmpty(post.spec.cover) ? (random_img + #strings.toString(#dates.createNow().time)) + '_index_' + post.spec.title)  : post.spec.cover+' '}\"\n+                     th:data-lazy-src=\"${#strings.isEmpty(post.spec.cover) ? (random_img + #strings.toString(#dates.createNow().time) + '_index_' + post.spec.title)  : post.spec.cover+' '}\"\n                      th:alt=\"${post.spec.title}\" alt=\"\">\n               </a>\n \n               <div class=\"info flex-1\">\n"
                 }
             ],
             "date": 1679846775088,

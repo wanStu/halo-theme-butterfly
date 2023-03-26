@@ -156,7 +156,7 @@
         <img class="block w-100 h-100"
              th:src="${theme.config.loading.preload}"
              th:attr="onerror='this.src='+${'`'+theme.config.loading.err+'`'}"
-             th:data-lazy-src="${#strings.isEmpty(ps.spec.cover) ?(random_img + #strings.toString(#dates.createNow().time)) + '_index_' + psStat.index) : ps.spec.cover+' '  }" 
+             th:data-lazy-src="${#strings.isEmpty(ps.spec.cover) ?(random_img + #strings.toString(#dates.createNow().time) + '_index_' + psStat.index) : ps.spec.cover+' '  }" 
              th:alt="${ps.spec.title}" alt="">
       </a>
       <div class="desc flex-1">
